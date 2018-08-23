@@ -7,4 +7,8 @@ Exploratory Ananlysis in R:
 Kiva.org is an online crowdfunding platform to extend financial services to poor and financially excluded people around the world.
 Goal: To predict if a loan would be accepted or not. 
 Data balancing: We used stratified sampling with replacement. 
-Supervised Learning: 
+ 
+Methodology: 
+Supervised Learning: Performed Logistic Regression, Xgboost, Random Forests. Xgboost generated smallest variance in AUC curve, thus showing this model was robust even when its parameters were stochastic. It had best AUC score across 40 folds. Almost in every fold, curve was within 1-sigma interval.  
+Unsupervised Learning: Performed Cluster Analysis using partitioning around medoids (PAM) abd Gower distance. 
+
